@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/server';
-
 import fetch from 'isomorphic-unfetch';
+import fs from 'fs';
 
 import { Readme } from './components';
 
@@ -30,8 +30,9 @@ async function getMusic() {
   let movies = undefined;
   let riding = undefined;
 
-  let markup = ReactDOM.renderToStaticMarkup(
+  let markdown = ReactDOM.renderToStaticMarkup(
     <Readme {...{ movies, music, riding }} />
   );
-  console.log(markup);
+
+  fs.writeFileSync('./README.md', markdown);
 })();
