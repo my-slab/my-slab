@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:my-slab/my-slab.git",
-  "author": "my-slab <mitchell.stewart@mylsb.email>",
+  "author": "my-slab <mitch.stewart@hey.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel index.js -d lib && node lib"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
