@@ -6,7 +6,7 @@
   "author": "my-slab <mitch.stewart@hey.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel index.js -d lib && node lib"
+    "build": "babel src -d lib && node lib"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.1.0",
