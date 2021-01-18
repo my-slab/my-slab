@@ -36,7 +36,7 @@ export function Movies(props) {
 
   return (
     <section>
-      📼 <h4>I love movies </h4>
+      <h4>📼 I love movies </h4>
       <p>Recently I've been watching</p>
       <_Movies data={data} />
       <span>
