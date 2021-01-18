@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [15.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -31,5 +31,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           push-branch: main
+          name: my-slab
+          email: mitch.stewart@hey.com
           commit-message: 'chore: Build README'
-          rebase: 'true' # pull abd rebase before commit
+          rebase: 'true'
