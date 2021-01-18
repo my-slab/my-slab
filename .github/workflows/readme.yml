@@ -27,7 +27,9 @@ jobs:
         env:
           LAST_FM_KEY: ${{secrets.LAST_FM_KEY}}
       - name: Push README
-        uses: mikeal/publish-to-github-action@1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'main'
+        uses: github-actions-x/commit@v2.7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: main
+          commit-message: 'chore: Build README'
+          rebase: 'true' # pull abd rebase before commit
