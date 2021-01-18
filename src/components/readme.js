@@ -9,6 +9,7 @@ export function Readme(props) {
     <article>
       <h3>Hey, I'm Mitch ✌️</h3>
       <Music data={music} />
+      <hr />
       <Movies data={movies} />
     </article>
   );

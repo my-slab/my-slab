@@ -37,7 +37,7 @@ export function Music(props) {
 
   return (
     <section>
-      <h4>I love music 💽</h4>
+      <h4>💽 I love music</h4>
       <p>Recently I've been listening to</p>
       <Artists data={data} />
       <span>
