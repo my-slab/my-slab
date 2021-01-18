@@ -17,8 +17,8 @@ export async function getMovies() {
 
     let movies = [];
     for (let item of items) {
-      let { content, guid, title } = item;
-      movies.push({ content, guid, title });
+      let { content, guid: id, title } = item;
+      movies.push({ content, id, title });
     }
 
     return movies;

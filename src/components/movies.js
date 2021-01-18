@@ -19,8 +19,8 @@ function _Movies(props) {
     <table>
       <tbody>
         {data.map((movie) => {
-          let { content, guid, title } = movie;
-          return <Movie key={guid} {...{ content, title }} />;
+          let { content, id, title } = movie;
+          return <Movie key={id} {...{ content, title }} />;
         })}
       </tbody>
     </table>
@@ -36,7 +36,7 @@ export function Movies(props) {
 
   return (
     <section>
-      <h4>📼 I love movies </h4>
+      <h4>📼 I love movies</h4>
       <p>Recently I've been watching</p>
       <_Movies data={data} />
       <span>

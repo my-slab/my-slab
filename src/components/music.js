@@ -19,9 +19,8 @@ function Artists(props) {
     <table>
       <tbody>
         {data.map((artist) => {
-          let { image, mbid, name } = artist;
-          image = image[2]['#text'];
-          return <Artist key={mbid} {...{ image, name }} />;
+          let { image, id, name } = artist;
+          return <Artist key={id} {...{ image, name }} />;
         })}
       </tbody>
     </table>
