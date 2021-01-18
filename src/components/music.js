@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Artist(props) {
+function Artist(props) {
   let { name, image } = props;
 
   return (
@@ -12,7 +12,7 @@ export function Artist(props) {
   );
 }
 
-export function Music(props) {
+function Artists(props) {
   let { data } = props;
 
   return (
@@ -21,9 +21,28 @@ export function Music(props) {
         {data.map((artist) => {
           let { image, mbid, name } = artist;
           image = image[2]['#text'];
-          return <Artist key={mbid} name={name} image={image} />;
+          return <Artist key={mbid} {...{ image, name }} />;
         })}
       </tbody>
     </table>
+  );
+}
+
+/**
+ * @example
+ * <Music data={{...}} />
+ */
+export function Music(props) {
+  let { data } = props;
+
+  return (
+    <section>
+      <h4>I love music 💽</h4>
+      <p>Recently I've been listening to</p>
+      <Artists data={data} />
+      <span>
+        View my <a href="https://www.last.fm/user/mylsb">last.fm profile</a>
+      </span>
+    </section>
   );
 }
