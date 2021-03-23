@@ -33,6 +33,7 @@ export async function getMusic() {
 }
 
 async function getTopAlbums(artist) {
+  artist = encodeURIComponent(artist);
   const LAST_FM_ALBUMS_URL = `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artist}&api_key=${options.key}&format=json`;
 
   return fetch(LAST_FM_ALBUMS_URL)
@@ -41,6 +42,7 @@ async function getTopAlbums(artist) {
       let {
         topalbums: { album: albums },
       } = data;
+
       return albums[0].image[2]['#text'];
     });
 }
