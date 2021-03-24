@@ -5,7 +5,7 @@ function Artist(props) {
 
   return (
     <td>
-      <img src={image} height="150px" alt={`Publicity photo of ${name}`} />
+      <img src={image} height="150px" alt="" role="presentation" />
       <br />
       {name}
     </td>
