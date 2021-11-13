@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { Music, Movies, Blog } from './'
+import { Blog } from './blog'
+import { Movies } from './movies'
+import { Music } from './music'
 
 export function Readme(props) {
   let { movies, music, blog } = props
