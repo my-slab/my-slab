@@ -19,7 +19,7 @@ function Artists(props) {
     <table>
       <tbody>
         {data.map((artist) => {
-          let { image, id, name } = artist ?? {}
+          let { image, id, name } = artist
           return <Artist key={id} {...{ image, name }} />
         })}
       </tbody>
