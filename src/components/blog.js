@@ -11,7 +11,7 @@ function Post(props) {
     <>
       <tr>
         <td>
-          <bold>{title}</bold> on <i>{formattedDate}</i>
+          <b>{title}</b> on <i>{formattedDate}</i>
         </td>
       </tr>
       <tr>
