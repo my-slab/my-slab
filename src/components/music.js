@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 function Artist(props) {
-  let { name, image } = props;
+  let { name, image } = props
 
   return (
     <td>
@@ -9,22 +9,22 @@ function Artist(props) {
       <br />
       {name}
     </td>
-  );
+  )
 }
 
 function Artists(props) {
-  let { data } = props;
+  let { data } = props
 
   return (
     <table>
       <tbody>
         {data.map((artist) => {
-          let { image, id, name } = artist;
-          return <Artist key={id} {...{ image, name }} />;
+          let { image, id, name } = artist ?? {}
+          return <Artist key={id} {...{ image, name }} />
         })}
       </tbody>
     </table>
-  );
+  )
 }
 
 /**
@@ -32,7 +32,7 @@ function Artists(props) {
  * <Music data={{...}} />
  */
 export function Music(props) {
-  let { data } = props;
+  let { data } = props
 
   return (
     <section>
@@ -43,5 +43,5 @@ export function Music(props) {
         View my <a href="https://www.last.fm/user/mylsb">last.fm profile</a>
       </span>
     </section>
-  );
+  )
 }

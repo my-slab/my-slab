@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { Movies, Music } from '../components';
+import { Music, Movies, Blog } from '../components'
 
 export function Readme(props) {
-  let { movies, music, riding } = props;
+  let { movies, music, blog } = props
 
   return (
     <article>
@@ -17,6 +17,8 @@ export function Readme(props) {
       <Music data={music} />
       <hr />
       <Movies data={movies} />
+      <hr />
+      <Blog data={blog} />
     </article>
-  );
+  )
 }
