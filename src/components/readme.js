@@ -19,8 +19,6 @@ export function Readme(props) {
       <Music data={music} />
       <hr />
       <Movies data={movies} />
-      <hr />
-      <Blog data={blog} />
     </article>
   )
 }
