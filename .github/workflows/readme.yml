@@ -26,6 +26,8 @@ jobs:
         run: npm run build --if-present
         env:
           LAST_FM_KEY: ${{secrets.LAST_FM_KEY}}
+      - name: Setup
+        run: git config --global --add safe.directory *
       - name: Push README
         uses: github-actions-x/commit@v2.7
         with:
