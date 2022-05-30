@@ -16,7 +16,7 @@ export function Readme(props) {
         <p>💻 I like building websites</p>
       </section>
       <hr />
-      <Music data={music} />
+//       <Music data={music} />
       <hr />
       <Movies data={movies} />
     </article>
