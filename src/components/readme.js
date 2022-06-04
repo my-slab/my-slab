@@ -1,11 +1,10 @@
 import React from 'react'
 
-import { Blog } from './blog'
 import { Movies } from './movies'
 import { Music } from './music'
 
 export function Readme(props) {
-  let { movies, music, blog } = props
+  let { movies, music } = props
 
   return (
     <article>
@@ -16,7 +15,7 @@ export function Readme(props) {
         <p>💻 I like building websites</p>
       </section>
       <hr />
-      {/* <Music data={music} />*/}
+      <Music data={music} />
       <hr />
       <Movies data={movies} />
     </article>
