@@ -43,7 +43,7 @@ async function getTopAlbums(artist) {
         topalbums: { album: albums },
       } = data;
 
-      let index = artist === 'Sky Ferreira' ? 1 : 0;
+      let index = artist.trim().toLowerCase() === 'sky ferreira' ? 1 : 0;
       return albums[index].image[2]['#text'];
     });
 }
