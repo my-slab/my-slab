@@ -43,7 +43,8 @@ async function getTopAlbums(artist) {
         topalbums: { album: albums },
       } = data;
 
-      return albums[0].image[2]['#text'];
+      let index = artist === 'Sky Ferreria' ? 1 : 0;
+      return albums[index].image[2]['#text'];
     });
 }
 
