@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Cycling } from './cycling'
 import { Movies } from './movies'
 import { Music } from './music'
 
@@ -18,6 +19,8 @@ export function Readme(props) {
       <Music data={music} />
       <hr />
       <Movies data={movies} />
+      <hr />
+      <Cycling />
     </article>
   )
 }
