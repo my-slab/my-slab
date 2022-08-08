@@ -37,7 +37,7 @@ export function Music(props) {
   return (
     <section>
       <h4>💽 I love music</h4>
-      <p>Recently I've been listening to</p>
+      <p>I've been listening to</p>
       <Artists data={data} />
       <span>
         View my <a href="https://www.last.fm/user/mylsb">last.fm profile</a>
