@@ -4,7 +4,7 @@ const options = {
   key: process.env.LAST_FM_KEY,
   limit: '5',
   period: '7day',
-  user: 'mylsb',
+  user: 'my-slab',
 };
 const LAST_FM_ARTISTS_URL = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&period=${options.period}&limit=${options.limit}&user=${options.user}&api_key=${options.key}&format=json`;
 
