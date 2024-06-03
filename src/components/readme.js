@@ -12,7 +12,6 @@ export function Readme(props) {
       <section>
         <p>🙆‍♂️ he, him</p>
         <p>📍 Melbourne, Australia</p>
-        <p>💻 I like building websites</p>
       </section>
       <hr />
       <Music data={music} />
