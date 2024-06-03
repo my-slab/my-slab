@@ -36,8 +36,7 @@ export function Movies(props) {
 
   return (
     <section>
-      <h4>📼 I love movies</h4>
-      <p>I've been watching</p>
+      <h4>I've been watching</h4>
       <_Movies data={data} />
       <span>
         View my <a href="https://letterboxd.com/myslab/">Letterboxd profile</a>
