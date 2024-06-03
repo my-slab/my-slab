@@ -39,7 +39,7 @@ export function Music(props) {
       <h4>I've been listening to</h4>
       <Artists data={data} />
       <span>
-        View my <a href="https://www.last.fm/user/mylsb">last.fm profile</a>
+        View my <a href="https://www.last.fm/user/my-slab">last.fm profile</a>
       </span>
     </section>
   )
