@@ -8,10 +8,10 @@ export function Readme(props) {
 
   return (
     <article>
-      <h3>Hey, I'm Mitch ✌️</h3>
+      <h3>I'm Mitch</h3>
       <section>
-        <p>🙆‍♂️ he, him</p>
-        <p>📍 Melbourne, Australia</p>
+        <p>he/him</p>
+        <p>Naarm (Melbourne), Australia</p>
       </section>
       <hr />
       <Music data={music} />
