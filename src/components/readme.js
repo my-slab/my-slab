@@ -10,7 +10,7 @@ export function Readme(props) {
       <h3>I'm Mitch</h3>
       <section>
         <p>👨 he/him</p>
-        <p>📍 Melbourne, Australia</p>
+        <p>📍 Naarm (Melbourne), Australia</p>
       </section>
       <hr />
       <Music data={music} />
